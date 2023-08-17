@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./Button.module.scss";
 
-interface BotaoProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
-class Botao extends React.Component<BotaoProps> {
+class Botao extends React.Component<Props> {
   render() {
     const { children, ...rest } = this.props;
     return (
